@@ -1,0 +1,58 @@
+#PROGRAM TO CALCULATE EMI 
+
+p=int(input('enter p:'))
+s=int(input('enter s:'))
+t=int(input('enter t:'))
+emi=(p+s)/t*12
+print('emi:',emi)
+
+Output:
+enter p:10000
+enter s:200
+enter t:3
+emi: 40800.0
+
+
+#PROGRAM TO SWAP TWO NUMBERS WITHOUT THIRD VARIABLE
+
+a=int(input('enter a:'))
+b=int(input('enter b:'))
+a=a+b
+b=a-b
+a=a-b
+print('a is ',a,'b is ',b)
+
+Output:
+enter a:4
+enter b:7
+a is  7 b is  4
+
+
+#PROGRAM TO READ STUDENT DATA AND DISPLAY IT 
+
+sno=int(input('enter sno:'))
+name=input('enter name:')
+gender=input('enter gender:')
+group=input('enter group:')
+address=input('enter address:')
+phno=int(input('enter phno:'))
+print('sno is ',sno)
+print('name is ',name)
+print('gender is ',gender)
+print('group is ',group)
+print('address is ',address)
+print('phno is ',phno)
+
+Output:
+enter sno:7
+enter name:sathvika
+enter gender:F
+enter group:mpcs
+enter address:tuni
+enter phno:9876543210
+sno is  7
+name is  sathvika
+gender is  F
+group is  mpcs
+address is  tuni
+phno is  9876543210
