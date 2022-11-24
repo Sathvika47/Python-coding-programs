@@ -1,0 +1,52 @@
+#BIGGEST OF TWO MNUMBERS
+
+a=int(input('enter a:'))
+b=int(input('enter b:'))
+print('a is big') if a>b else print('b is big')
+
+Output:
+enter a:4
+enter b:7
+b is big
+
+
+#IF TWO NUMBERS ARE EQUAL OR NOT
+
+a=int(input('enter a:'))
+b=int(input('enter b:'))
+print('two numbers are equal') if a==b else print('two numbres are not equal')
+
+Output1:
+enter a:4
+enter b:7
+two numbres are not equal
+Output2:
+enter a:4
+enter b:4
+two numbers are equal
+
+
+#IF GIVEN NUMBER IS EVEN OR ODD
+
+a=int(input('enter a:'))
+print('evev') if a%2==0 else print('odd')
+
+Output1:
+enter a:7
+odd
+Output2:
+enter a:4
+evev
+
+
+#IF GIVEN NUMBER IS POSITIVE OR NEGATIVE
+
+a=int(input('enter a:'))
+print('positive') if a>0 else print('negative')
+
+Output1:
+enter a:7
+positive
+Output2:
+enter a:-4
+negative
