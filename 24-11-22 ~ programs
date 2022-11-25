@@ -1,0 +1,47 @@
+#PROGRAM TO PERFORM ARITHMETIC OPERATIONS
+
+a=int(input('enter a:'))
+b=int(input('enter b:'))
+add=a+b
+sub=a-b
+mul=a*b
+div=a/b
+modiv=a%b
+exp=a**b
+flodiv=a//b
+print('add is:',add,'sub is:',sub,'mul is:',mul,'div is:',div,'modiv is:',modiv,'exp is:',exp,'flodiv is:',flodiv)
+
+Output:
+enter a:4
+enter b:7
+add is: 11 sub is: -3 mul is: 28 div is: 0.5714285714285714 modiv is: 4 exp is: 16384 flodiv is: 0
+
+
+#PROGRAM TO PERFORM RELATIONAL OPERATORS
+
+a=int(input('enter a:'))
+b=int(input('enter b:'))
+c=a>b,a<b,a>=b,a<=b,a==b,a!=b
+print(c)
+
+Output:
+enter a:4
+enter b:7
+(False, True, False, True, False, True)
+
+
+#PROGRAM TO FIND WHETHER STUDENT IS PASS OR FAIL
+
+sno=int(input('enter sno:'))
+name=input('enter name:')
+group=input('enter group:')
+s1=int(input('enter s1 marks:'))
+s2=int(input('enter s2 marks:'))
+s3=int(input('enter s3 marks:'))
+print('pass') if s1>=35 and s2>=35 and s3>=35 else print('fail')
+
+Output:
+enter s1 marks:35
+enter s2 marks:47
+enter s3 marks:50
+pass
