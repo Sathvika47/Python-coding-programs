@@ -1,0 +1,70 @@
+#PROGRAM TO EXECUTE BITWISE AND,OR,XOR
+
+a=int(input('enter a:'))
+b=int(input('enter b:'))
+print('a&b=',a&b)
+print('a|b=',a|b)
+print('a^b=',a^b)
+
+Output:
+enter a:4
+enter b:7
+a&b= 4
+a|b= 7
+a^b= 3
+
+
+#PROGRAM TO EXECUTE 1 TO 10 LEFT OPERATIONS ON A GIVEN NUMBER
+
+a=int(input('enter a:'))
+print('a<<1=',a<<1)
+print('a<<2=',a<<2)
+print('a<<3=',a<<3)
+print('a<<4=',a<<4)
+print('a<<5=',a<<5)
+print('a<<6=',a<<6)
+print('a<<7=',a<<7)
+print('a<<8=',a<<8)
+print('a<<9=',a<<9)
+print('a<<10=',a<<10)
+
+Output:
+enter a:47
+a<<1= 94
+a<<2= 188
+a<<3= 376
+a<<4= 752
+a<<5= 1504
+a<<6= 3008
+a<<7= 6016
+a<<8= 12032
+a<<9= 24064
+a<<10= 48128
+
+
+#PROGRAM TO EXECUTE 1 TO 10 RIGHT SHIFT OPERATIONS ON A GIVEN NUMBER
+
+a=int(input('enter a:'))
+print('a>>1=',a>>1)
+print('a>>2=',a>>2)
+print('a>>3=',a>>3)
+print('a>>4=',a>>4)
+print('a>>5=',a>>5)
+print('a>>6=',a>>6)
+print('a>>7=',a>>7)
+print('a>>8=',a>>8)
+print('a>>9=',a>>9)
+print('a>>10=',a>>10)
+
+Output:
+enter a:47
+a>>1= 23
+a>>2= 11
+a>>3= 5
+a>>4= 2
+a>>5= 1
+a>>6= 0
+a>>7= 0
+a>>8= 0
+a>>9= 0
+a>>10= 0
