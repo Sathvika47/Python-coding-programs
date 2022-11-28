@@ -1,0 +1,46 @@
+#TO CHECK THE GIVEN PIN NUMBER IS VALID OR NOT
+
+oldPin=531126
+newPin=int(input('enter new pin:'))
+if(newPin==oldPin):
+    print('Continue the transaction')
+else:
+    print('Incorrect pin number, please try again')
+
+Output1:
+enter new pin:531126
+Continue the transaction
+Output2:
+enter new pin:531127
+Incorrect pin number, please try again
+
+
+#TO CHECK IF THE GIVEN NUMBER ABOVE HUNDRED OR NOT
+
+n=int(input('Enter number:'))
+if n<100:
+    print('Number is less than hundred')
+else:
+    print('Number is greater than hundred')
+
+Output1:
+Enter number:47
+Number is less than hundred
+Output2:
+Enter number:470
+Number is greater than hundred
+
+
+#ATM BALANCE CREDIT PROCESS
+balance=int(input('Enter balance:'))
+amount=int(input('Enter amount:'))
+total=balance+amount
+print('Credited amount=', amount)
+print('Total balance=',total)
+
+Output:
+Enter balance:7000
+Enter amount:4000
+Credited amount= 4000
+Total balance= 11000
+
