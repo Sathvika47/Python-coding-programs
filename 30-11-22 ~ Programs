@@ -1,0 +1,145 @@
+#PROGRAM TO PREPARE A BILL FOR SUPER MARKET
+
+rice=1200
+dryfruits=600
+chips=100
+chocolates=100
+blackgram=250
+cphno=int(input('Enter customer phno:'))
+cname=input('Enter customer name:')
+cadd=input('Enter customer address:')
+riceq=int(input('How many rice packets you want:'))
+dryfruitsq=int(input('How many dryfruits packets you want:'))
+chipsq=int(input('How many chips packets you want:'))
+chocolatesq=int(input('How many chocolates packets you want:'))
+blackgramq=int(input('How many blackgram packets you want:'))
+bill=(riceq*rice)+(dryfruits*dryfruitsq)+(chips*chipsq)+(chocolates*chocolatesq)+(blackgram*blackgramq)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif  bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+print('Customer phone number:',cphno)
+print('Customer name:',cname)
+print('Customer address:',cadd)
+print('tax:',tax)
+print('bill:',bill)
+
+Output:
+Enter customer phno:9014247474
+Enter customer name:Brownie
+Enter customer address:Australia
+How many rice packets you want:2
+How many dryfruits packets you want:4
+How many chips packets you want:2
+How many chocolates packets you want:1
+How many blackgram packets you want:2
+Customer phone number: 9014247474
+Customer name: Brownie
+Customer address: Australia
+tax: 280.0
+bill: 5600
+
+********************************************************************************************************************************************************************
+
+#PROGRAM TO PRINT ACCORDING TO COUPON
+
+rice=1200
+dryfruits=600
+chips=100
+chocolates=100
+blackgram=250
+cphno=int(input('Enter customer phno:'))
+cname=input('Enter customer name:')
+cadd=input('Enter customer address:')
+riceq=int(input('How many rice packets you want:'))
+dryfruitsq=int(input('How many dryfruits packets you want:'))
+chipsq=int(input('How many chips packets you want:'))
+chocolatesq=int(input('How many chocolates packets you want:'))
+blackgramq=int(input('How many blackgram packets you want:'))
+coupon=input('Enter coupon code in capital letters:')
+bill=(riceq*rice)+(dryfruits*dryfruitsq)+(chips*chipsq)+(chocolates*chocolatesq)+(blackgram*blackgramq)
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif  bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+if coupon=='DIWALI'and bill>=5000:
+    dis=bill*10/100
+elif coupon=='DIWALI'and bill>=3000:
+    dis=bill*6/100
+elif coupon=='DIWALI'and bill>=1000:
+    dis=bill*5/100
+elif coupon=='CHRISMAS'and bill>=3000:
+    dis=bill*20/100
+elif coupon=='CHRISMAS'and bill>=2000:
+    dis=bill*10/100
+elif coupon=='CHRISMAS'and bill>=1000:
+    dis=bill*5/100
+else:
+    dis=0
+print('Customer phone number:',cphno)
+print('Customer name:',cname)
+print('Customer address:',cadd)
+print('tax:',tax)
+bill=tax+bill-dis
+print('bill:',bill)
+
+Output:
+Enter customer phno:9014247474
+Enter customer name:Brownie
+Enter customer address:Australia
+How many rice packets you want:2
+How many dryfruits packets you want:4
+How many chips packets you want:2
+How many chocolates packets you want:1
+How many blackgram packets you want:2
+Enter coupon code in capital letters:DIWALI
+Customer phone number: 9014247474
+Customer name: Brownie
+Customer address: Australia
+tax: 280.0
+bill: 5320.0
+
+*******************************************************************************************************************************************************************
+
+#PROGRAM TO PREPARE ELECTRICITY BILL
+
+cno=int(input('Enter customer number:'))
+cname=input('Enter customer name:')
+cadd=input('Enter customer address:')
+units=int(input('Enter units:'))
+if 0<units<=30:
+    bill=10+25+(units*1.95)
+elif 31<units<=75:
+    bill=10+30+(units*3)
+elif 76<=units<=125:
+    bill=10+45+(units*4.5)
+elif 126<=units<=225:
+    bill=10+50+(units*6)
+elif 226<=units<=400:
+    bill=10+55+(units*8.75)
+else:
+    bill=10+55+(units*9.75)
+print('Customer number:',cno)
+print('Customer name:',cname)
+print('Bill amount:',bill)
+
+Output:
+Enter customer number:471203
+Enter customer name:Brownie
+Enter customer address:Australia
+Enter units:47
+Customer number: 471203
+Customer name: Brownie
+Bill amount: 181
