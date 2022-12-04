@@ -1,0 +1,42 @@
+#BASIC HACKERRANK PROGRAM
+
+print('Hello, World!')
+
+Output:
+Hello, World!
+
+*******************************************************************************************************************************************************************
+
+#HACKERRANK PROGRAM TO PRINT WEIRD OR NOT
+
+n=int(input('Enter any number:'))
+if n%2==1:
+    print('Weird')
+elif 2<=n<=5:
+    print('Not Weird')
+elif 6<=n<=20:
+    print('Weird')
+else:
+    print('Not Weird')
+    
+Output:
+Enter any number:7
+Weird
+
+*******************************************************************************************************************************************************************
+
+#HACKERRANK PROGRAM TO PRINT LEAP YEAR OR NOT
+
+def is_leap(year):
+    if year%4==0 and year%100!=0:
+        return True
+    elif year%400==0:
+        return True
+    else:
+        return False
+year=int(input('Enter year:'))
+print(is_leap(year))
+
+Output:
+Enter year:2003
+False
