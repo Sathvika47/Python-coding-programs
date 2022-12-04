@@ -1,0 +1,77 @@
+#PROGRAM TO PRINT BIGGEST OF FOUR NUMBERS
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+if a>b and a>c and a>d:
+    print('a is big')
+elif b>c and b>d:
+    print('b is big')
+elif c>d:
+    print('c is big')
+else:
+    print('d is big')
+    
+Output:
+2
+4
+1
+7
+d is big
+
+
+#PROGRAM TO GENERATE EMPLOYEE TAX
+
+empno=int(input('Enter employee number:'))
+empname=input('Enter employee name:')
+empdesig=input('Enter employee designation:')
+basicsal=int(input('Enter employee basic salary:'))
+da=int(input('Enter employee daily allowance:'))
+ta=int(input('Entre employee travelling allowance:'))
+hra=int(input('Entre employee house rental allowance:'))
+netsal=basicsal+da+ta+hra
+if netsal>100000:
+    tax=netsal*10/100
+elif netsal>50000:
+    tax=netsal*7/100
+elif netsal>40000:
+    tax=netsal*4/100
+elif netsal>20000:
+    tax=netsal*2/100
+else:
+    tax=0
+print('tax is',tax)    
+
+Output:
+Enter employee number:471203
+Enter employee name:Rajesh
+Enter employee designation:Manager
+Enter employee basic salary:40000
+Enter employee daily allowance:2000
+Entre employee travelling allowance:1000
+Entre employee house rental allowance:4000
+tax is 1880.0
+
+
+#PROGRAM TO PRINT WHETHER STUDENT IS PASS OR FAIL
+
+sno=int(input('Enter student number:'))
+sname=input('Enter student name:')
+group=input('Enter student group:')
+s1=int(input('Entre s1 marks:'))
+s2=int(input('Entre s2 marks:'))
+s3=int(input('Entre s3 marks:'))
+if s1>=35 and s2>=35 and s3>=35:
+    print('pass')
+else:
+    print('fail')
+    
+Output:
+Enter student number:07
+Enter student name:Sathvika
+Enter student group:MPCS
+Entre s1 marks:47
+Entre s2 marks:49
+Entre s3 marks:50
+pass
