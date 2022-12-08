@@ -1,0 +1,52 @@
+#PROGRAM 1
+
+a=int(input('enter rows:'))
+b=int(input('enter columns:'))
+k=1
+for i in range(1,a+1):
+    for j in range(1,b+1):
+        print(k,end=' ')
+        k=k+1
+    print()
+    
+Output:
+enter rows:3
+enter columns:3
+1 2 3 
+4 5 6 
+7 8 9 
+
+***************************************************************************************************************************************************************
+
+#PROGRAM 2
+
+a=int(input('enter rows:'))
+b=int(input('enter columns:'))
+k=9
+for i in range(1,a+1):
+    for j in range(1,b+1):
+        print(k,end=' ')
+        k=k-1
+    print()
+    
+Output:
+enter rows:3
+enter columns:3
+9 8 7 
+6 5 4 
+3 2 1 
+
+****************************************************************************************************************************************************************
+
+#PROGRAM 3
+
+for i in range(1,6):
+    for j in range(5,i,-1):
+        print('*',end=' ')
+    print()
+    
+Output:
+* * * * 
+* * * 
+* * 
+* 
