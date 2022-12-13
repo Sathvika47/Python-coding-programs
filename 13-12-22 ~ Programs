@@ -1,0 +1,52 @@
+#ASSIGNMENT 1 ~ TO INSERT n NUMBER OF DISTRICTS AND DISPLAY THEM IN SEQUENTIAL ORDER
+
+ap=[]
+n=int(input('enter no.of districts:'))
+for i in range(n):
+    x=input('enter district name:')
+    ap.append(x)
+    ap.sort()
+print(ap)
+
+Output:
+enter no.of districts:4
+enter district name:VISAKHAPATNAM
+enter district name:VIJAYANAGARAM
+enter district name:EAST GODAVARI
+enter district name:KRISHNA
+['EAST GODAVARI', 'KRISHNA', 'VIJAYANAGARAM', 'VISAKHAPATNAM']
+
+****************************************************************************************************************************************************************
+
+#ASSIGNMENT 2 ~ TO REMOVE DUPLICATES FROM THE LIST
+
+n=int(input())
+l=list(map(int,input().split()))
+m=[]
+for i in l:
+    if i not in m:
+        m.append(i)
+print(m)
+
+Output:
+7
+4 4 4 4 2 3 7
+[4, 2, 3, 7]
+
+************************************************************************************************************************************************************
+
+#PROGRAM TO FIND SECOND MAX NUMBER
+
+n=int(input())
+l=list(map(int,input().split()))
+m=[]
+for i in l:
+    if i not in m:
+        m.append(i)
+m.sort(reverse=True)
+print(m[1])
+
+Output:
+5
+2 3 4 7 7
+4
