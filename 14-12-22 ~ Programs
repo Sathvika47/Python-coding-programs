@@ -1,0 +1,65 @@
+#ASSIGNMENT 1 ~ TO FIND OUT THE MAXIMUM AND MINIMUM VALUES IN A LIST WITHOUT USING LIBRARY FUNCTIONS
+
+n=int(input())
+l=list(map(int,input().split()))
+for i in range(0,n-1):
+    for j in range(i+1,n):
+        if l[i]>l[j]:
+            k=l[i]
+            l[i]=l[j]
+            l[j]=k
+print('minimum element is',l[0])
+print('maximum element is',l[-1])
+
+Output:
+7
+2 8 3 0 4 6 7
+minimum element is 0
+maximum element is 8
+
+*******************************************************************************************************************************************************************
+
+#ASSIGNMENT 2 ~ TO ARRANGE IN ELEMENTS IN DESCENDING ORDER IN A LIST WITHOUT USING LIBRARY FUNCTIONS
+
+n=int(input())
+l=list(map(int,input().split()))
+for i in range(0,n-1):
+    for j in range(i+1,n):
+        if l[i]<l[j]:
+            k=l[i]
+            l[i]=l[j]
+            l[j]=k
+print('The elements in descending order are',l)
+
+Output:
+7
+2 8 3 0 4 6 7
+The elements in descending order are [8, 7, 6, 4, 3, 2, 0]
+
+****************************************************************************************************************************************************************
+
+#ASSIGNMENT 3 ~ TO FIND WHETHER THE LIST HAS DUPLICATE ELEMENTS OR NOT
+
+n=int(input())
+l=list(map(int,input().split()))
+m=[]
+for i in l:
+    if i not in m:
+        m.append(i)
+if(l==m):
+    print('no')
+else:
+    print('yes')
+
+Output1:
+7
+4 4 4 4 7 7 1
+yes
+
+Output2:
+7
+2 8 0 3 4 6 7
+no
+
+
+
