@@ -1,0 +1,72 @@
+#ASSIGNMENT 1 ~ TO SEPARATE POSITIVE AND NEGATIVE NUMBERS
+
+m=int(input())
+l=list(map(int,input().split()))
+p=[]
+n=[]
+for i in range(0,m):
+    if l[i]>=0:
+        p.append(l[i])
+    else:
+        n.append(l[i])
+k=p+n
+for i in range(m):
+    print(k[i],end=' ')
+    
+Output:
+7
+-1 4 -7 7 -4 1 2
+4 7 1 2 -1 -7 -4 
+
+******************************************************************************************************************************************************************
+
+#ASSIGNMENT 2 ~ TO SEPARATE EVEN AND ODD NUMBERS
+
+n=int(input())
+l=list(map(int,input().split()))
+e=[]
+o=[]
+for i in range(0,n):
+    if l[i]%2==0:
+        e.append(l[i])
+    else:
+        o.append(l[i])
+k=e+o
+for i in range(n):
+    print(k[i],end=' ')
+
+Output:
+7
+2 9 4 7 1 0 6
+2 4 0 6 9 7 1 
+
+************************************************************************************************************************************************************
+
+#ASSIGNMENT 3 ~ TO CHECK WHETHER SUBTRACTION OF TWO NUMBERS IN A LIST EQUAL TO GIVEN NUMBER
+
+n=int(input())
+l=list(map(int,input().split()))
+k=int(input())
+cond=0
+for i in range(0,n):
+    for j in range(i+1,n):
+        if l[i]-l[j]==k:
+            cond=1
+            break
+if cond==1:
+    print('yes')
+else:
+    print('no')
+    
+Output1:
+7
+2 9 4 7 1 0 6
+3
+yes
+
+Output2:
+7
+2 9 3 6 0 1 7
+7
+no
+
