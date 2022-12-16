@@ -1,0 +1,48 @@
+#ASSIGNMENT 1 ~ TO PERFORM STRING UCASE,LCASE AND SWAPCASE OPERATIONS
+
+str=input('Enter the string:')
+l=len(str)
+print('No.of characters in the given string:',l)
+print('Str from lower to upper:',str.upper())
+print('Str from upper to lower:',str.lower())
+print('Str from upper to lower and vice versa:',str.swapcase())
+
+Output:
+Enter the string:Welcome To PYTHON Coding
+No.of characters in the given string: 24
+Str from lower to upper: WELCOME TO PYTHON CODING
+Str from upper to lower: welcome to python coding
+Str from upper to lower and vice versa: wELCOME tO python cODING
+
+***************************************************************************************************************************************************************
+
+#ASSIGNMENT 2 ~ TO COUNT NO.OF ALPHABETS IN THE GIVEN STRING
+
+str=input('Enter the string:')
+l=len(str)
+count=0
+for i in range(0,l):
+    if str[i].isalpha()==1:
+        count=count+1
+print('No.of alphabets=',count)
+
+Output:
+Enter the string:sathvika@47.sath
+No.of alphabets= 12
+
+********************************************************************************************************************************************************************
+
+#ASSIGNMENT 3 ~ TO COUNT NO.OF DIGITS IN THE GIVEN STRING
+
+str=input('Enter the string:')
+l=len(str)
+count=0
+for i in range(0,l):
+    if str[i].isdigit()==1:
+        count=count+1
+print('No.of digits=',count)
+
+Output:
+Enter the string:sathvika1247.browns
+No.of digits= 4
+
