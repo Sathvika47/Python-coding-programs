@@ -1,0 +1,79 @@
+#ASSIGNMENT 1 ~ TKINTER CALENDER PROGRAM
+
+from tkinter import *
+def addnumber():
+    a=int(e1.get())
+    b=int(e2.get())
+    res=a+b
+    s.set(res)
+def subnumber():
+    a=int(e1.get())
+    b=int(e2.get())
+    res=a-b
+    s.set(res)
+def mulnumber():
+    a=int(e1.get())
+    b=int(e2.get())
+    res=a*b
+    s.set(res)
+def divnumber():
+    a=int(e1.get())
+    b=int(e2.get())
+    res=a/b
+    s.set(res)
+cal=Tk()
+s=StringVar()
+Label(cal,text='Enter first number:').grid(row=0,column=0)
+Label(cal,text='Enter second number:').grid(row=1,column=0)
+Result=Label(cal,text="",textvariable=s).grid(row=2,column=0)
+e1=Entry(cal)
+e2=Entry(cal)
+e1.grid(row=0,column=1)
+e2.grid(row=1,column=1)
+b1=Button(cal,text='ADD',command=addnumber)
+b2=Button(cal,text='SUB',command=subnumber)
+b3=Button(cal,text='MUL',command=mulnumber)
+b4=Button(cal,text='DIV',command=divnumber)
+b1.grid(row=2,column=1)
+b2.grid(row=2,column=2)
+b3.grid(row=2,column=3)
+b4.grid(row=2,column=4)
+mainloop()
+
+**************************************************************************************************************************************************************
+
+#ASSIGNMENT 2 ~ TO SUB 1 VALUE FROM THE GIVEN NUMBER AND DIVIDE IT INTO ARRAY OR LIST
+
+n=int(input('enter any number:'))
+res=n-1
+l=[]
+s=str(res)
+for i in s:
+    l.append(int(i))
+print(l)
+
+Output:
+enter any number:66
+[6, 5]
+
+****************************************************************************************************************************************************************
+
+#ASSIGNMENT 3 ~ TO REVERSE OF THE HALF RIGHT LIST
+
+n=int(input('enter any number:'))
+l=list(map(int,input().split()))
+m=n//2
+p=[]
+q=[]
+for i in range(0,m+1):
+    q.append(l[i])
+for i in range(n-1,m,-1):
+    p.append(l[i])
+q.extend(p)
+print(q)
+
+Output:
+enter any number:7
+2 4 6 8 4 7 1
+[2, 4, 6, 8, 1, 7, 4]
+
