@@ -1,0 +1,54 @@
+# ASSIGNMENT 1 ~ ARRAY LEFT ROTATION
+
+n=int(input())
+arr=list(map(int,input().split()))
+r=int(input())
+for i in range(0,r):
+    first=arr[0]
+    for j in range(0,n-1):
+        arr[j]=arr[j+1]
+    arr[n-1]=first
+for i in arr:
+    print(i,end=' ')
+
+Output:
+7
+2 3 4 5 6 7 8
+4
+6 7 8 2 3 4 5 
+
+******************************************************************************************************************************************************************
+
+# ASSIGNMENT 2 ~ TO REMOVE REPEATED NUMBERS FROM THE LIST
+
+n=int(input())
+l=list(map(int,input().split()))
+for i in range(0,n):
+    count=0
+    for j in range(0,n):
+        if l[i]==l[j]:
+            count=count+1
+    if count==1:
+        print(l[i],end=' ')
+
+Output:
+7
+1 1 2 2 4 7 6
+4 7 6 
+
+****************************************************************************************************************************************************************
+
+# ASSIGNMENT 3 ~ TO COUNT TOTAL EVEN  NUMBERS IN THE LIST
+
+n=int(input('enter any number:'))
+l=list(map(int,input().split()))
+c=0
+for i in range(0,n):
+    if l[i]%2==0:
+        c=c+1
+print(c)
+
+Output:
+enter any number:7
+2 5 3 4 6 8 1
+4
