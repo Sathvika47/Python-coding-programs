@@ -1,0 +1,42 @@
+# ASSIGNMENT 1 ~ RIGHT ROTATION OF ARRAY
+
+n,r=list(map(int,input().split()))
+l=list(map(int,input().split()))
+for i in range(r):
+    last=l[n-1]
+    for j in range(n-1,0,-1):
+        l[j]=l[j-1]
+    l[0]=last
+for i in l:
+    print(i,end=' ')
+
+Output:
+7 4
+1 2 3 4 5 6 7
+4 5 6 7 1 2 3 
+
+****************************************************************************************************************************************************************
+
+# ASSIGNMENT 2 ~ TO PRINT ODD NUMBERS USING LIST COMPREHENSATION
+
+n=int(input())
+l=[i for i in range(1,n+1) if i%2==1]
+print(l)
+
+Output:
+20
+[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+
+******************************************************************************************************************************************************************
+
+# ASSIGNMENT 3 ~ TO PRINT 4 AND 5 MULTIPLES IN GIVEN RANGE
+
+n=int(input())
+m=int(input())
+l=[i for i in range(n,m+1) if i%4==0 or i%5==0]
+print(l)
+
+Output:
+40
+70
+[40, 44, 45, 48, 50, 52, 55, 56, 60, 64, 65, 68, 70]
