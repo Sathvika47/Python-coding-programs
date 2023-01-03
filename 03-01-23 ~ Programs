@@ -1,0 +1,72 @@
+# ASSIGNMENT 1 ~ HACKERRANK PROGRAM
+
+x = int(input())
+y = int(input())
+z = int(input())
+n = int(input())
+l=[[i,j,k] for i in range(0,x+1) for j in range(0,y+1) for k in range(0,z+1) if i+j+k!=n]
+print(l)
+
+Input:
+1
+1
+1
+2
+Output:
+[[0, 0, 0], [0, 0, 1], [0, 1, 0], [1, 0, 0], [1, 1, 1]]
+
+*********************************************************************************************************************************************************************
+
+# ASSIGNMENT 2 ~ TO PRINT LEFT DIAGONAL VALUES OF GIVEN MATRIX
+
+n=int(input())
+D=[]
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    D.append(l)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            print(D[i][j],end=' ')
+
+Output:
+2
+2
+6
+4
+1
+2 1 
+
+***************************************************************************************************************************************************************
+
+# ASSIGNMENT 3 ~ TO FIND DIFF BETWEEN LEFT DIAGONAL AND RIGHT DIAGONAL
+
+n=int(input())
+D=[]
+rsum=0
+lsum=0
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    D.append(l)
+for i in range(n):
+    for j in range(n):
+        if i+j==n-1:
+            rsum=rsum+D[i][j]
+        if i==j:
+            lsum=lsum+D[i][j]
+print(lsum-rsum)
+
+Output:
+2
+2
+6
+4
+1
+-7
+    
