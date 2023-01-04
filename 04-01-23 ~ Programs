@@ -1,0 +1,109 @@
+# ASSIGNMENT 1 ~ LEETCODE PGM TO FIND THE SUM OF DIAGONALS
+
+class Solution(object):
+    def diagonalSum(self, mat):
+        n=len(mat)
+        s=0
+        for i in range(n):
+            for j in range(n):
+                if i==j:
+                    s=s+mat[i][j]
+                elif i+j==n-1:
+                    s=s+mat[i][j]
+        return s
+    
+Input: mat = [[1,1,1,1],
+              [1,1,1,1],
+              [1,1,1,1],
+              [1,1,1,1]]
+Output: 8
+
+*******************************************************************************************************************************************************************
+
+# ASSIGNMENT 2 ~ PROGRAM TO FIND MAX ELE FROM DIAGONALS
+
+n=int(input())
+D=[]
+m=[]
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    D.append(l)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            print(D[i][j],end=' ')
+            m.append(D[i][j])
+        elif i+j==n-1:
+            print(D[i][j],end=' ')
+            m.append(D[i][j])
+print('\nmax ele is:',max(m))
+
+Output:
+3
+2
+5
+9
+6
+0
+4
+7
+4
+1
+2 9 0 7 1 
+max ele is: 9
+
+*******************************************************************************************************************************************************************
+
+# ASSIGNMENT 3 ~ TO FIND IF THE SUM ALL ROW VALUES IS 2 
+
+n=int(input())
+m=[]
+c=0
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+for i in range(0,n):
+    sum=0
+    for j in range(0,n):
+        sum=sum+m[i][j]
+    if sum==2:
+        c=c+1
+if c==3:
+    print('Coder target matrix')
+else:
+    print('not a coder target matrix')
+
+Output1:
+3
+1
+1
+0
+0
+0
+2
+1
+0
+1
+Coder target matrix
+
+Output2:
+3
+1
+0
+0
+2
+0
+1
+2
+0
+2
+not a coder target matrix
+
+
+
