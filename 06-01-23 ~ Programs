@@ -1,0 +1,60 @@
+# ASSIGNMENT 1 ~ TO REMOVE DUPLICATE ELEMENTS FROM THE LIST
+
+n=int(input())
+l=list(map(int,input().split()))
+u=[]#it stores unique values
+for i in l:
+    if i not in u:
+        u.append(i)
+print(u)
+
+Output:
+7
+4 4 7 7 7 1 2
+[4, 7, 1, 2]
+
+****************************************************************************************************************************************************************
+
+# ASSIGNMENT 2 ~ TO FIND WHICH ACCOUNT THE MAIL ID BELONGS TO
+
+email=input('enter mail id:')
+if email.endswith("@gmail.com"):
+    print('you are using google account')
+elif email.endswith("@yahoo.com"):
+    print('you are using yahoo account')
+elif email.endswith("@adc.aditya.ac.in"):
+    print('you are using aditya account')
+else:
+    print("Invalid Email id")
+
+Output 1:
+enter mail id:sath@gmail.com
+you are using google account
+
+Output 2:
+enter mail id:sath@adc.com
+Invalid Email id
+
+****************************************************************************************************************************************************************
+
+# ASSIGNMENT 3 ~ TO FIND WHETHER THE MAIL AND PHNO ARE VALID OR NOT
+
+phno=input('enter phno:')
+email=input('enter mail id:')
+f=int(phno[0])
+if email.endswith("@gmail.com") or email.endswith("@yahoo.com") or email.endswith("@adc.aditya.ac.in"):
+    if len(phno)==10 and f>5:
+        print('Registration Successful')
+else:
+    print('Check your details')
+
+Output 1:
+enter phno:9988774412
+enter mail id:sath@gmail.com
+Registration Successful
+
+Output 2:
+enter phno:9988774412
+enter mail id:sath@adc.com
+Check your details
+
