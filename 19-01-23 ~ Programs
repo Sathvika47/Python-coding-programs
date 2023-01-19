@@ -1,0 +1,69 @@
+# ASSIGNMENT 1 ~ HACKERRANK PROGRAM
+
+def isBalanced(s):
+    for i in range(0,n+1):
+        while(True):
+            if '[]' in s:
+                s=s.replace('[]','')
+            elif '()' in s:
+                s=s.replace('()','')
+            elif '{}' in s:
+                s=s.replace('{}','')
+            else:
+                return not s
+n=int(input())    
+for i in range(0,n,1):
+    s=input()
+    if isBalanced(s):
+        print('YES')
+    else:
+        print('NO')
+
+INPUT:
+3
+{[()]}
+{[(])}
+{{[[(())]]}}
+
+OUTPUT:
+YES
+NO
+YES
+
+**************************************************************************************************************************************************************
+
+# ASSIGNMENT 2 ~ TO PRINT THE SERIES IN DESCENDING ORDER
+
+s=input()
+n=len(s)
+for i in range(n,-1,-1):
+   # print(s[0:i])#without space
+    for j in range(i):
+        print(s[j],end=' ')
+    print()
+
+OUTPUT:
+SATH
+S A T H 
+S A T 
+S A 
+S 
+
+***************************************************************************************************************************************************************
+
+
+# ASSIGNMENT 3 ~ TO PRINT THE FREQUENCY
+
+s=input()
+m=int(input())
+res=''
+n=len(s)
+for i in range(0,n):
+    for j in range(0,m):
+        res=res+s[i]
+print(res)
+
+OUTPUT:
+SATH
+2
+SSAATTHH
