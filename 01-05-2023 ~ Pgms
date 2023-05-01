@@ -1,0 +1,100 @@
+******************************************************** ASSIGNMENT-1 ******************************************************************************
+#program to create player dictionary
+
+p={}
+n=int(input('Enter no of players:'))
+for i in range(1,n+1):
+    l=[]
+    pno=int(input('Enter player number:'))
+    pname=input('Enter player name:')
+    l.append(pname)
+    p[pno]=l
+print(p)
+pno=int(input('Enter player number:'))
+print('Player name:',p[pno][0])
+
+Output:
+
+Enter no of players:4
+Enter player number:07
+Enter player name:MS Dhoni
+Enter player number:10
+Enter player name:Sachin
+Enter player number:18
+Enter player name:Virat 
+Enter player number:45
+Enter player name:Rohith
+{7: ['MS Dhoni'], 10: ['Sachin'], 18: ['Virat '], 45: ['Rohith']}
+Enter player number:7
+Player name: MS Dhoni
+
+******************************************** ASSIGNMENT - 2 *************************************************************************************************
+program to prepare student dictionary
+
+s={}
+n=int(input('Enter no of students:'))
+for i in range(1,n+1):
+    l=[]
+    sno=int(input('Enter student number:'))
+    sname=input('Enter student name:')
+    group=input('Enter group name:')
+    college=input('Enter college name:')
+    branch=input('Enter branch name:')
+    phno=int(input('Enter phone number:'))
+    l.append(sname)
+    l.append(group)
+    l.append(college)
+    l.append(branch)
+    l.append(phno)
+    s[sno]=l
+print(s)
+sno=int(input('Enter student number:'))
+print('Student name:',s[sno][0])
+print('group name:',s[sno][1])
+print('college name:',s[sno][2])
+print('branch name:',s[sno][3])
+print('phone number:',s[sno][4])
+
+Output:
+
+Enter no of students:2
+Enter student number:7
+Enter student name:Sathvika
+Enter group name:MPCS
+Enter college name:ADC
+Enter branch name:Tuni
+Enter phone number:9876543201
+Enter student number:1
+Enter student name:Pranathi
+Enter group name:MPCS
+Enter college name:ADC
+Enter branch name:Tuni
+Enter phone number:9988776621
+{7: ['Sathvika', 'MPCS', 'ADC', 'Tuni', 9876543201], 1: ['Pranathi', 'MPCS', 'ADC', 'Tuni', 9988776621]}
+Enter student number:1
+Student name: Pranathi
+group name: MPCS
+college name: ADC
+branch name: Tuni
+phone number: 9988776621
+
+
+************************************************************* ASSIGNMENT - 3 *************************************************************************************
+program to print biggest of three numbers
+
+a=int(input('Enter a:'))
+b=int(input('Enter b:'))
+c=int(input('Enter c:'))
+if a>b and a>c:
+    print('a is big')
+elif b>c:
+    print('b is big')
+else:
+    print('c is big')
+    
+Output:
+
+Enter a:10
+Enter b:40
+Enter c:20
+b is big
