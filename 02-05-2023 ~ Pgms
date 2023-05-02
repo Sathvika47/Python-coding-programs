@@ -1,0 +1,59 @@
+***************************************** ASSIGNMENT-1 *************************************************************************************
+// program to find least freequency number from the list
+
+l=list(map(int,input().split()))
+d={}
+for i in l:
+    if i not in d:
+        d[i]=1                                                         
+    else:
+        d[i]=d[i]+1
+m=list(d.values())
+p=min(m)
+for i in d:
+    if d[i]==p:
+        print(i)
+
+OUTPUT:
+
+4 7 7 1 2 3 2 3 1
+4
+
+************************************************************ ASSIGNMENT-2 ************************************************************************************
+//program to find maximum and minumum freequency numbers and print their difference
+
+l=list(map(int,input().split()))
+d={}
+for i in l:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]=d[i]+1
+m=list(d.values())
+p=max(m)
+for i in d:
+    if d[i]==p:
+        q=i
+r=min(m)
+for i in d:
+    if d[i]==r:
+        s=i
+print('Difference:',q-s)
+
+OUTPUT:
+
+4 4 7 2 2 2 3 3 3
+Difference: -4
+
+********************************************************* ASSIGNMENT-3 *************************************************************************************
+//program to print max and min numbers from the list
+
+l=list(map(int,input().split()))
+print('max:',max(l))
+print('min:',min(l))
+
+OUTPUT:
+
+1 5 3 7 5 0 6 4
+max: 7
+min: 0
