@@ -1,0 +1,71 @@
+********************************************** ASSIGNMENT-1 ***************************************************************************************************
+Student result dictionary
+
+try:
+    d={}
+    n=int(input())
+    for i in range(1,n+1):
+        name,res=input().split()
+        d[name]=res
+    for i in range(1,n+1):
+        name=input()
+        if name in d:
+            print(name,d[name],'the exam')
+        else:
+            print('No result found')
+except:
+    print()
+
+
+OUTPUT:
+
+4
+ramu pass
+devi fail
+rani fail
+radha pass
+ramu
+ramu pass the exam
+devi
+devi fail the exam
+sita
+No result found
+radha
+radha pass the exam
+
+************************************************************* ASSIGNMENT-2 ***********************************************************************************
+Program to find most repeated character and freequency from the paragraph
+
+par=input()
+d={}
+for i in par:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]=d[i]+1
+m=list(d.values())
+r=max(m)
+for i in d:
+    if d[i]==r:
+        print(i,r)
+        
+        
+OUTPUT:
+
+sathvika nagnisha maneesha
+a 6
+
+*********************************************************** ASSIGNMENT-3 ************************************************************************************
+Program to factorial of the given number
+
+n=int(input())
+fact=1
+for i in range(1,n+1):
+    fact=fact*i
+print(fact)
+
+
+OUTPUT:
+
+7
+5040
