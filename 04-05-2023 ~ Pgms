@@ -1,0 +1,77 @@
+*************************************************** ASSIGNMENT-1 ******************************************************************************
+ Program to print given year is leap year or not using class
+ 
+ class LeapYear:
+    def  leap(self,year):
+        if (year%4==0 and year%100!=0) or year%400==0:
+            return True
+        else:
+            return False
+year=int(input('Enter year:'))
+l=LeapYear()
+if l.leap(year):
+    print(year,'is a leap year')
+else:
+    print(year,'is not a leap year') 
+    
+OUTPUT:
+
+Enter year:2003
+2003 is not a leap year
+
+***************************************************** ASSIGNMENT-2 ***************************************************************************
+Program to print given number is palindrome or not using class
+
+class Palindrome:
+    def  pal(self,p):
+        s=0
+        t=p
+        while(p!=0):
+            r=p%10
+            s=(s*10)+r
+            p=p//10
+        if (s==t):
+            return True
+        else:
+            return False
+p=int(input('Enter number:'))
+pa=Palindrome()
+if pa.pal(p):
+    print(p,'is a palindrome number')
+else:
+    print(p,'is not a  palindrome number') 
+    
+OUTPUT:
+
+Enter number:1247421
+1247421 is a palindrome number
+
+***************************************************** ASSIGNMENT-3 ****************************************************************************************
+Program to print n febnocci series using class
+
+class Fibonacci:
+    def  fib(self,n,a,b):
+        for i in range(1,n+1):
+            c=a+b
+            print(c)
+            a=b
+            b=c
+        return True
+n=int(input('Enter number:'))
+a=int(input('Enter a:'))
+b=int(input('Enter b:'))
+f=Fibonacci()
+f.fib(n,a,b)
+
+OUTPUT:
+
+Enter number:7
+Enter a:0
+Enter b:1
+1
+2
+3
+5
+8
+13
+21
